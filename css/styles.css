@@ -13,7 +13,7 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --hero-footer-text-color: #FFFFFF;
-    --bacground-priamary: #F5F5F5;
+    --bacground-priamary: #ECECEC;
     --bacground-color-team: #F5F4FA;
     --bacground-footer-color: #2F303A;
 
@@ -81,9 +81,13 @@ body {
 
 /* Hero */
 
+.hero {
+    background-color: #2F303A;
+}
+
 .hero-title {
     color: var(--hero-footer-text-color);
-    background-color: #000000;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -99,7 +103,6 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
 }
 
 /* Features */
@@ -175,14 +178,16 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
+}
+
+.team-list {
+    background-color: var(--hero-footer-text-color);
 }
 
 .team-text {
     color: var(--priamary-text-color);
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
 }
 
 /* Footer */
