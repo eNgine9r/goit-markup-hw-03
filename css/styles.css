@@ -45,9 +45,20 @@ h1, h2, h3, h4, h5, h6, ul, p {
     margin-bottom: 0;
 }
 
+/* Header pages*/
+
+.header-pages{
+    display: flex;
+    align-items: center;
+}
+
 /* Logo */
 
 .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
     color: #000000;
     font-family: Raleway, sans-serif;
     font-size: 26px;
@@ -61,7 +72,23 @@ h1, h2, h3, h4, h5, h6, ul, p {
 
 /* Site nav */
 
+.site-nav{
+    display: flex;
+}
+
+.site-nav .item{
+    margin-right: 50px;
+}
+
+.site-nav .item:last-child{
+    margin-right: 0px;
+}
+
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -77,6 +104,21 @@ h1, h2, h3, h4, h5, h6, ul, p {
 
 .site-nav .link.current {
     color: var(--accent-color)
+}
+
+/* Address link */
+
+.address-link{
+    display: flex;
+    margin-left: auto;
+}
+
+.address-link .item{
+    margin-right: 50px;
+}
+
+.address-link .item:last-child{
+    margin-right: 0px;
 }
 
 .address-link .link {
@@ -131,9 +173,15 @@ h1, h2, h3, h4, h5, h6, ul, p {
 /* Features */
 
 .feature-list {
+    display: flex;
+    flex-wrap: wrap;
     color: var(--priamary-text-color);
     font-size: 14px;
     line-height: 1.71;
+}
+
+.feature-list .item{
+    width: 270px;
 }
 
 .feature-list .title {
@@ -146,7 +194,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
     text-transform: uppercase;
 }
 
-.feature-list p {
+.feature-list .text {
     margin-top: 0;
     margin-bottom: 0px;
 }
