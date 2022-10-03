@@ -14,7 +14,7 @@
     --accent-color: #2196F3;
     --hero-footer-text-color: #FFFFFF;
     --bacground-priamary: #FFFFFF;
-    --bacground-color-team: #F5F4FA;
+    --bacground-color-team-button-list: #F5F4FA;
     --bacground-footer-color: #2F303A;
 
 }
@@ -47,9 +47,15 @@ h1, h2, h3, h4, h5, h6, ul, p {
 
 /* Header pages*/
 
+.header{
+    display: block;
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header-pages{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* Logo */
@@ -151,7 +157,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -317,7 +322,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
     padding: 10px 32px;
     min-width: 216px;
     border: 0;
-
     color: var(--hero-footer-text-color);
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -335,7 +339,9 @@ h1, h2, h3, h4, h5, h6, ul, p {
     font-family: inherit;
     font-size: 16px;
     line-height: 1.63;
+    border: 0;
     text-align: center;
+    background-color: var(--bacground-color-team-button-list);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     cursor: pointer
@@ -350,8 +356,39 @@ h1, h2, h3, h4, h5, h6, ul, p {
 
 /* Portfolio page styles */
 
-.filter-list .item{
+.filter-list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.filter-list .item{
+    margin-right: 8px;
+}
+
+.filter-list .item:last-child{
+    margin-right: 0px;
+}
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-list .item{
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #EEEEEE;
+}
+
+.project-list .item:nth-child(3n){
+    margin-right: 0px;
+}
+
+.project-list .item:nth-last-child(-n + 3){
+    margin-bottom: 0px;
 }
 
 .portfolio-title {
@@ -359,11 +396,13 @@ h1, h2, h3, h4, h5, h6, ul, p {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
+    text-align: center;
     letter-spacing: 0.06em;
 }
 
 .portfolio-text {
     color: var(--priamary-text-color);
     font-size: 16px;
+    text-align: center;
     line-height: 1.88;
 }
