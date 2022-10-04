@@ -55,7 +55,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
 .header-pages{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 
 /* Logo */
@@ -272,6 +271,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 .footer-address{
     font-style: normal;
     list-style: none;
+    padding: 0px;
 }
 
 .footer .link{
@@ -335,6 +335,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 }
 
 .button-list {
+    padding: 6px 22px;
     font-weight: 500;
     font-family: inherit;
     font-size: 16px;
@@ -349,6 +350,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 
 .button-list:hover,
 .button-list:focus {
+    padding: 6px 25px;
     color: var(--hero-footer-text-color);
     background-color: var(--accent-color)
     
@@ -380,7 +382,9 @@ h1, h2, h3, h4, h5, h6, ul, p {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-    background-color: #EEEEEE;
+    background-color: var(--bacground-priamary);
+    border-bottom: 1px solid #ECECEC;
+
 }
 
 .project-list .item:nth-child(3n){
