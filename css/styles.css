@@ -45,6 +45,12 @@ h1, h2, h3, h4, h5, h6, ul, p {
     margin-bottom: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Header pages*/
 
 .header{
@@ -238,7 +244,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 
 /* Team */
 
-.team-titel-text{
+.team-title-text{
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -293,8 +299,16 @@ h1, h2, h3, h4, h5, h6, ul, p {
     padding: 0px;
 }
 
+.footer-address .item{
+    margin-bottom: 9px;
+}
+
+.footer-address .item:nth-last-child(1){
+    margin-bottom: 0px;
+}
+
 .footer .link{
-    padding-top: 9px;
+    /* padding-top: 9px; */
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal;
@@ -307,7 +321,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
 .footer .link:focus{
     color: var(--accent-color)
 }
-
 
 .footer-logo {
     color: var(--hero-footer-text-color);
@@ -403,7 +416,6 @@ h1, h2, h3, h4, h5, h6, ul, p {
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: var(--bacground-priamary);
-    border-bottom: 1px solid #ECECEC;
 
 }
 
@@ -413,6 +425,14 @@ h1, h2, h3, h4, h5, h6, ul, p {
 
 .project-list .item:nth-last-child(-n + 3){
     margin-bottom: 0px;
+}
+
+.project-title-text{
+    border-left: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .portfolio-title {
@@ -425,6 +445,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 }
 
 .portfolio-text {
+    margin-top: 4px;
     color: var(--priamary-text-color);
     font-size: 16px;
     text-align: center;
