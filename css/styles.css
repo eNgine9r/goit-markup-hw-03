@@ -157,7 +157,8 @@ img {
 
 .hero-title {
     margin-bottom: 40px;
-
+    margin-left: 237px;
+    margin-right: 237px;
 
     color: var(--hero-footer-text-color);
     font-weight: 900;
@@ -383,7 +384,6 @@ img {
 
 .button-list:hover,
 .button-list:focus {
-    padding: 6px 25px;
     color: var(--hero-footer-text-color);
     background-color: var(--accent-color)
     
@@ -428,11 +428,10 @@ img {
 }
 
 .project-title-text{
+    padding: 20px 24px;
     border-left: 1px solid #ECECEC;
     border-right: 1px solid #ECECEC;
     border-bottom: 1px solid #ECECEC;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .portfolio-title {
@@ -440,7 +439,6 @@ img {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
-    text-align: center;
     letter-spacing: 0.06em;
 }
 
@@ -448,6 +446,5 @@ img {
     margin-top: 4px;
     color: var(--priamary-text-color);
     font-size: 16px;
-    text-align: center;
     line-height: 1.88;
 }
